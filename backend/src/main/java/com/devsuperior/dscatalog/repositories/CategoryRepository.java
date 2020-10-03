@@ -7,7 +7,5 @@ import com.devsuperior.dscatalog.entities.Category;
 
 @Repository //para registrar a classe como um componente injetável
 public interface CategoryRepository extends JpaRepository<Category, Long>{
-	
-	
 
 }
