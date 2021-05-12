@@ -30,7 +30,7 @@ public class ProductDTO implements Serializable {
 	private Double price;
 	private String imgUrl;
 	
-	@PastOrPresent(message = "A data do produtnão pode ser futura")
+	@PastOrPresent(message = "A data do produto não pode ser futura")
 	private Instant date;
 	
 	private List<CategoryDTO> categories = new ArrayList<>();

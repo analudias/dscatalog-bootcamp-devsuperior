@@ -1,6 +1,7 @@
 package com.devsuperior.dscatalog.dto;
 
 import java.io.Serializable;
+import java.time.Instant;
 
 import com.devsuperior.dscatalog.entities.Category;
 
@@ -19,8 +20,8 @@ public class CategoryDTO implements Serializable {
 	}
 	
 	public CategoryDTO(Category entity) {
-		this.id = entity.getId();
-		this.name = entity.getName();
+		id = entity.getId();
+		name = entity.getName();
 	}
 
 	public Long getId() {
@@ -38,6 +39,4 @@ public class CategoryDTO implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-
 }
